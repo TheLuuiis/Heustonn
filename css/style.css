@@ -5,6 +5,7 @@
     --text: #1a2e35;
     --white: #fff;
     --background: #fff; 
+    --background-violet: #ff4f5a;
 }
 
 * {
@@ -92,12 +93,11 @@ body {
 
 .section-1 {
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 45px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 .container-service {
@@ -145,4 +145,282 @@ body {
     font-size: 16px;
     font-weight: 400;
     text-align: start;
+}
+
+.section-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 80px 0px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-about {
+    width: 1140px;
+    height: 697px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-about h1 {
+    color: var(--text);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 10px;
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.description-about h1::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; 
+    height: 5px;
+    border: transparent;
+    border-radius: 50pxpx;
+    background-color: var(--background-violet);
+}
+
+.description-about p {
+    color: var(--text);
+    font-size: 16px;
+    font-weight:200;
+    text-align: center;
+    margin: 0px 0px 30px;
+}
+
+.description-about img {
+    width: 350px;
+    height: 364.11px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.container-more {
+    gap: 10px;
+    width: 100%;
+    height: 27px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-more p {
+    font-size: 16px;
+    color: var(--text);
+    font-weight: 500;
+    margin: 0;
+}
+
+.container-more .line {
+    width: 90px;
+    height: 1.5px;
+    background-color: var(--text);
+}
+
+/* Section - 3 - Services */
+.section-3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 100px;
+}
+
+.section-3 .container-services {
+    width: 1200px;
+    height: 544.59px;
+    position: relative;
+}
+
+.section-3 .container-services .worker {
+    width: 200px;
+    height: 175px;
+    object-fit: cover;
+    position: absolute;
+    left: 43%;
+    top: 70%;
+}
+
+.section-3 .title-service {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 0px 50px;
+}
+
+.section-3 .title-service h1 {
+    color: var(--text);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 0px 10px;
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.section-3 .title-service h1::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; 
+    height: 5px;
+    border: transparent;
+    border-radius: 50pxpx;
+    background-color: var(--background-violet);
+}
+
+.section-3 .title-service p {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-3 .container-servi {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-service {
+    width: 262.5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .3s ease;
+}
+
+.card-service img {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 6px;
+}
+
+.card-service .img-2 {
+    width: 168.41px;
+    height: 200px;
+}
+
+.card-service .img-3 {
+    width: 238.67px;
+    height: 200px;
+}
+
+.card-service .img-4 {
+    width: 100%;
+    height: 200px;
+}
+
+.card-service .description-card {
+    width: 100%;
+    height: 100%;
+}
+.card-service .description-card h6 {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-service .description-card p {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0px 0px 20px;
+}
+
+.description-card .container-more-card {
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-card .container-more-card p {
+    color: var(--title);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: start;
+    margin: 0;
+    cursor: pointer;
+}
+
+.description-card .container-more-card .line-violet {
+    width: 90px;
+    height: 2px;
+    background-color: var(--background-violet);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.xd {
+    width: 100%;
+    height: 50vh;
+    background-color: red;
 }
