@@ -479,7 +479,7 @@ body {
 }
 .work-for {
     animation: move-down 2s ease infinite;
-}2
+}
 .card-work figure {
     width: auto;
     height: auto;
@@ -500,13 +500,117 @@ body {
     text-align: center;
 }
 
+/* Sección 5 */
+.section-5 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 100px 0px 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
 
+.container-form {
+    width: 555px;
+    height: 100%;
+    position: relative;
+}
 
+.title-form {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0px 0px 35px;
+}
 
+.title-form h1 {
+    color: var(--text);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto; 
+}
 
+.title-form h1::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; 
+    height: 5px;
+    border: transparent;
+    border-radius: 50px;
+    background-color: var(--title);
+}
 
+.container-form form {
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
 
+.container-form form input {
+    width: 100%;
+    height: auto;
+    padding: 12px 10px;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+    transition: .3s ease;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
 
+::placeholder {
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+.container-form form button {
+    width: 150px;
+    padding: 15px;
+    background-color: var(--background-violet);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    transition: .3s ease;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container-form form button:hover {
+    color: var(--title);
+    border: 1px solid #ff4f5a;
+    background-color: transparent;
+}
+
+/* Validation */
+.error {
+    width: 100%;
+    height: 1px;
+    color: red;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    left: 1px;
+    bottom: 15px;
+}
 
 
 
